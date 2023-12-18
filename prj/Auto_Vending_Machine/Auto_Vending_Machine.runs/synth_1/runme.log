@@ -1,0 +1,439 @@
+
+*** Running vivado
+    with args -log top_lcd_touch_FSM.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_lcd_touch_FSM.tcl
+
+
+ECHO 处于关闭状态。
+ECHO 处于关闭状态。
+
+****** Vivado v2023.1 (64-bit)
+  **** SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source top_lcd_touch_FSM.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 445.242 ; gain = 162.281
+Command: read_checkpoint -auto_incremental -incremental {E:/Xilinx/FPGA_Prjs/dzy/Automatic vending machine/prj/Auto_Vending_Machine/Auto_Vending_Machine.srcs/utils_1/imports/synth_1/top_lcd_touch_FSM.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from E:/Xilinx/FPGA_Prjs/dzy/Automatic vending machine/prj/Auto_Vending_Machine/Auto_Vending_Machine.srcs/utils_1/imports/synth_1/top_lcd_touch_FSM.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top top_lcd_touch_FSM -part xc7z020clg400-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-2
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 21656
+INFO: [Synth 8-11241] undeclared symbol 'pay_sta_flag', assumed default net type 'wire' [E:/Xilinx/FPGA_Prjs/dzy/Automatic vending machine/rtl/FSM/FSM_top.v:44]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1299.285 ; gain = 409.844
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_lcd_touch_FSM' [E:/Xilinx/FPGA_Prjs/dzy/Automatic vending machine/rtl/top_lcd_touch_FSM.v:1]
+INFO: [Synth 8-6157] synthesizing module 'touch_top' [E:/Xilinx/FPGA_Prjs/dzy/Automatic vending machine/rtl/touch/touch_top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'i2c_dri' [E:/Xilinx/FPGA_Prjs/dzy/Automatic vending machine/rtl/touch/i2c_dri.v:1]
+	Parameter CLK_FREQ bound to: 50000000 - type: integer 
+	Parameter I2C_FREQ bound to: 250000 - type: integer 
+	Parameter WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Xilinx/FPGA_Prjs/dzy/Automatic vending machine/rtl/touch/i2c_dri.v:210]
+INFO: [Synth 8-6155] done synthesizing module 'i2c_dri' (0#1) [E:/Xilinx/FPGA_Prjs/dzy/Automatic vending machine/rtl/touch/i2c_dri.v:1]
+INFO: [Synth 8-6157] synthesizing module 'touch_dri' [E:/Xilinx/FPGA_Prjs/dzy/Automatic vending machine/rtl/touch/touch_dri.v:1]
+	Parameter WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'touch_dri' (0#1) [E:/Xilinx/FPGA_Prjs/dzy/Automatic vending machine/rtl/touch/touch_dri.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'touch_top' (0#1) [E:/Xilinx/FPGA_Prjs/dzy/Automatic vending machine/rtl/touch/touch_top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'lcd_rgb_char' [E:/Xilinx/FPGA_Prjs/dzy/Automatic vending machine/rtl/lcd_rgb_char/lcd_rgb_char.v:1]
+INFO: [Synth 8-6157] synthesizing module 'clk_div' [E:/Xilinx/FPGA_Prjs/dzy/Automatic vending machine/rtl/lcd_rgb_char/clk_div.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'clk_div' (0#1) [E:/Xilinx/FPGA_Prjs/dzy/Automatic vending machine/rtl/lcd_rgb_char/clk_div.v:1]
+INFO: [Synth 8-6157] synthesizing module 'lcd_display' [E:/Xilinx/FPGA_Prjs/dzy/Automatic vending machine/rtl/lcd_rgb_char/lcd_display.v:1]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [E:/Xilinx/FPGA_Prjs/dzy/Automatic vending machine/prj/Auto_Vending_Machine/Auto_Vending_Machine.runs/synth_1/.Xil/Vivado-17132-xyh/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (0#1) [E:/Xilinx/FPGA_Prjs/dzy/Automatic vending machine/prj/Auto_Vending_Machine/Auto_Vending_Machine.runs/synth_1/.Xil/Vivado-17132-xyh/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'binary2bcd' [E:/Xilinx/FPGA_Prjs/dzy/Automatic vending machine/rtl/lcd_rgb_char/binary2bcd.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'binary2bcd' (0#1) [E:/Xilinx/FPGA_Prjs/dzy/Automatic vending machine/rtl/lcd_rgb_char/binary2bcd.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'lcd_display' (0#1) [E:/Xilinx/FPGA_Prjs/dzy/Automatic vending machine/rtl/lcd_rgb_char/lcd_display.v:1]
+INFO: [Synth 8-6157] synthesizing module 'lcd_driver' [E:/Xilinx/FPGA_Prjs/dzy/Automatic vending machine/rtl/lcd_rgb_char/lcd_driver.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'lcd_driver' (0#1) [E:/Xilinx/FPGA_Prjs/dzy/Automatic vending machine/rtl/lcd_rgb_char/lcd_driver.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'lcd_rgb_char' (0#1) [E:/Xilinx/FPGA_Prjs/dzy/Automatic vending machine/rtl/lcd_rgb_char/lcd_rgb_char.v:1]
+INFO: [Synth 8-6157] synthesizing module 'FSM_top' [E:/Xilinx/FPGA_Prjs/dzy/Automatic vending machine/rtl/FSM/FSM_top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'FSM_clk_div' [E:/Xilinx/FPGA_Prjs/dzy/Automatic vending machine/rtl/FSM/FSM_clk_div.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'FSM_clk_div' (0#1) [E:/Xilinx/FPGA_Prjs/dzy/Automatic vending machine/rtl/FSM/FSM_clk_div.v:1]
+INFO: [Synth 8-6157] synthesizing module 'FSM_dri' [E:/Xilinx/FPGA_Prjs/dzy/Automatic vending machine/rtl/FSM/FSM_dri.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'FSM_dri' (0#1) [E:/Xilinx/FPGA_Prjs/dzy/Automatic vending machine/rtl/FSM/FSM_dri.v:1]
+INFO: [Synth 8-6157] synthesizing module 'AutoVendingFSM' [E:/Xilinx/FPGA_Prjs/dzy/Automatic vending machine/rtl/FSM/AutoVendingFSM.v:1]
+INFO: [Synth 8-226] default block is never used [E:/Xilinx/FPGA_Prjs/dzy/Automatic vending machine/rtl/FSM/AutoVendingFSM.v:75]
+INFO: [Synth 8-6155] done synthesizing module 'AutoVendingFSM' (0#1) [E:/Xilinx/FPGA_Prjs/dzy/Automatic vending machine/rtl/FSM/AutoVendingFSM.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'FSM_top' (0#1) [E:/Xilinx/FPGA_Prjs/dzy/Automatic vending machine/rtl/FSM/FSM_top.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'top_lcd_touch_FSM' (0#1) [E:/Xilinx/FPGA_Prjs/dzy/Automatic vending machine/rtl/top_lcd_touch_FSM.v:1]
+WARNING: [Synth 8-6014] Unused sequential element CN1_reg[1] was removed.  [E:/Xilinx/FPGA_Prjs/dzy/Automatic vending machine/rtl/lcd_rgb_char/lcd_display.v:206]
+WARNING: [Synth 8-6014] Unused sequential element CN1_reg[0] was removed.  [E:/Xilinx/FPGA_Prjs/dzy/Automatic vending machine/rtl/lcd_rgb_char/lcd_display.v:206]
+WARNING: [Synth 8-6014] Unused sequential element CN2_reg[23] was removed.  [E:/Xilinx/FPGA_Prjs/dzy/Automatic vending machine/rtl/lcd_rgb_char/lcd_display.v:241]
+WARNING: [Synth 8-6014] Unused sequential element CN2_reg[21] was removed.  [E:/Xilinx/FPGA_Prjs/dzy/Automatic vending machine/rtl/lcd_rgb_char/lcd_display.v:241]
+WARNING: [Synth 8-6014] Unused sequential element CN2_reg[20] was removed.  [E:/Xilinx/FPGA_Prjs/dzy/Automatic vending machine/rtl/lcd_rgb_char/lcd_display.v:241]
+WARNING: [Synth 8-6014] Unused sequential element CN2_reg[18] was removed.  [E:/Xilinx/FPGA_Prjs/dzy/Automatic vending machine/rtl/lcd_rgb_char/lcd_display.v:241]
+WARNING: [Synth 8-6014] Unused sequential element CN2_reg[17] was removed.  [E:/Xilinx/FPGA_Prjs/dzy/Automatic vending machine/rtl/lcd_rgb_char/lcd_display.v:241]
+WARNING: [Synth 8-6014] Unused sequential element CN2_reg[16] was removed.  [E:/Xilinx/FPGA_Prjs/dzy/Automatic vending machine/rtl/lcd_rgb_char/lcd_display.v:241]
+WARNING: [Synth 8-6014] Unused sequential element CN2_reg[15] was removed.  [E:/Xilinx/FPGA_Prjs/dzy/Automatic vending machine/rtl/lcd_rgb_char/lcd_display.v:241]
+WARNING: [Synth 8-6014] Unused sequential element CN2_reg[10] was removed.  [E:/Xilinx/FPGA_Prjs/dzy/Automatic vending machine/rtl/lcd_rgb_char/lcd_display.v:241]
+WARNING: [Synth 8-6014] Unused sequential element CN2_reg[9] was removed.  [E:/Xilinx/FPGA_Prjs/dzy/Automatic vending machine/rtl/lcd_rgb_char/lcd_display.v:241]
+WARNING: [Synth 8-6014] Unused sequential element CN2_reg[8] was removed.  [E:/Xilinx/FPGA_Prjs/dzy/Automatic vending machine/rtl/lcd_rgb_char/lcd_display.v:241]
+WARNING: [Synth 8-6014] Unused sequential element CN2_reg[7] was removed.  [E:/Xilinx/FPGA_Prjs/dzy/Automatic vending machine/rtl/lcd_rgb_char/lcd_display.v:241]
+WARNING: [Synth 8-6014] Unused sequential element CN2_reg[6] was removed.  [E:/Xilinx/FPGA_Prjs/dzy/Automatic vending machine/rtl/lcd_rgb_char/lcd_display.v:241]
+WARNING: [Synth 8-6014] Unused sequential element CN2_reg[5] was removed.  [E:/Xilinx/FPGA_Prjs/dzy/Automatic vending machine/rtl/lcd_rgb_char/lcd_display.v:241]
+WARNING: [Synth 8-6014] Unused sequential element CN2_reg[2] was removed.  [E:/Xilinx/FPGA_Prjs/dzy/Automatic vending machine/rtl/lcd_rgb_char/lcd_display.v:241]
+WARNING: [Synth 8-6014] Unused sequential element CN2_reg[1] was removed.  [E:/Xilinx/FPGA_Prjs/dzy/Automatic vending machine/rtl/lcd_rgb_char/lcd_display.v:241]
+WARNING: [Synth 8-6014] Unused sequential element CN2_reg[0] was removed.  [E:/Xilinx/FPGA_Prjs/dzy/Automatic vending machine/rtl/lcd_rgb_char/lcd_display.v:241]
+WARNING: [Synth 8-6014] Unused sequential element CN3_reg[31] was removed.  [E:/Xilinx/FPGA_Prjs/dzy/Automatic vending machine/rtl/lcd_rgb_char/lcd_display.v:276]
+WARNING: [Synth 8-6014] Unused sequential element CN3_reg[1] was removed.  [E:/Xilinx/FPGA_Prjs/dzy/Automatic vending machine/rtl/lcd_rgb_char/lcd_display.v:276]
+WARNING: [Synth 8-6014] Unused sequential element CN3_reg[0] was removed.  [E:/Xilinx/FPGA_Prjs/dzy/Automatic vending machine/rtl/lcd_rgb_char/lcd_display.v:276]
+WARNING: [Synth 8-6014] Unused sequential element CN4_reg[31] was removed.  [E:/Xilinx/FPGA_Prjs/dzy/Automatic vending machine/rtl/lcd_rgb_char/lcd_display.v:311]
+WARNING: [Synth 8-6014] Unused sequential element CN4_reg[8] was removed.  [E:/Xilinx/FPGA_Prjs/dzy/Automatic vending machine/rtl/lcd_rgb_char/lcd_display.v:311]
+WARNING: [Synth 8-6014] Unused sequential element CN4_reg[7] was removed.  [E:/Xilinx/FPGA_Prjs/dzy/Automatic vending machine/rtl/lcd_rgb_char/lcd_display.v:311]
+WARNING: [Synth 8-6014] Unused sequential element CN4_reg[5] was removed.  [E:/Xilinx/FPGA_Prjs/dzy/Automatic vending machine/rtl/lcd_rgb_char/lcd_display.v:311]
+WARNING: [Synth 8-6014] Unused sequential element CN4_reg[1] was removed.  [E:/Xilinx/FPGA_Prjs/dzy/Automatic vending machine/rtl/lcd_rgb_char/lcd_display.v:311]
+WARNING: [Synth 8-6014] Unused sequential element CN4_reg[0] was removed.  [E:/Xilinx/FPGA_Prjs/dzy/Automatic vending machine/rtl/lcd_rgb_char/lcd_display.v:311]
+WARNING: [Synth 8-6014] Unused sequential element CN5_reg[1] was removed.  [E:/Xilinx/FPGA_Prjs/dzy/Automatic vending machine/rtl/lcd_rgb_char/lcd_display.v:346]
+WARNING: [Synth 8-6014] Unused sequential element CN5_reg[0] was removed.  [E:/Xilinx/FPGA_Prjs/dzy/Automatic vending machine/rtl/lcd_rgb_char/lcd_display.v:346]
+WARNING: [Synth 8-6014] Unused sequential element CN6_reg[31] was removed.  [E:/Xilinx/FPGA_Prjs/dzy/Automatic vending machine/rtl/lcd_rgb_char/lcd_display.v:382]
+WARNING: [Synth 8-6014] Unused sequential element CN6_reg[1] was removed.  [E:/Xilinx/FPGA_Prjs/dzy/Automatic vending machine/rtl/lcd_rgb_char/lcd_display.v:382]
+WARNING: [Synth 8-6014] Unused sequential element CN6_reg[0] was removed.  [E:/Xilinx/FPGA_Prjs/dzy/Automatic vending machine/rtl/lcd_rgb_char/lcd_display.v:382]
+WARNING: [Synth 8-6014] Unused sequential element CN7_reg[31] was removed.  [E:/Xilinx/FPGA_Prjs/dzy/Automatic vending machine/rtl/lcd_rgb_char/lcd_display.v:418]
+WARNING: [Synth 8-6014] Unused sequential element CN7_reg[1] was removed.  [E:/Xilinx/FPGA_Prjs/dzy/Automatic vending machine/rtl/lcd_rgb_char/lcd_display.v:418]
+WARNING: [Synth 8-6014] Unused sequential element CN7_reg[0] was removed.  [E:/Xilinx/FPGA_Prjs/dzy/Automatic vending machine/rtl/lcd_rgb_char/lcd_display.v:418]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1434.602 ; gain = 545.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1434.602 ; gain = 545.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1434.602 ; gain = 545.160
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.217 . Memory (MB): peak = 1434.602 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/Xilinx/FPGA_Prjs/dzy/Automatic vending machine/prj/Auto_Vending_Machine/Auto_Vending_Machine.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'u_lcd_rgb_char/u_lcd_display/u_blk_mem_gen_0'
+Finished Parsing XDC File [e:/Xilinx/FPGA_Prjs/dzy/Automatic vending machine/prj/Auto_Vending_Machine/Auto_Vending_Machine.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'u_lcd_rgb_char/u_lcd_display/u_blk_mem_gen_0'
+Parsing XDC File [E:/Xilinx/FPGA_Prjs/dzy/Automatic vending machine/prj/Auto_Vending_Machine/Auto_Vending_Machine.srcs/constrs_1/new/top_lcd_touch_FSM.xdc]
+Finished Parsing XDC File [E:/Xilinx/FPGA_Prjs/dzy/Automatic vending machine/prj/Auto_Vending_Machine/Auto_Vending_Machine.srcs/constrs_1/new/top_lcd_touch_FSM.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/Xilinx/FPGA_Prjs/dzy/Automatic vending machine/prj/Auto_Vending_Machine/Auto_Vending_Machine.srcs/constrs_1/new/top_lcd_touch_FSM.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_lcd_touch_FSM_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_lcd_touch_FSM_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1505.848 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.107 . Memory (MB): peak = 1505.848 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1505.848 ; gain = 616.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1505.848 ; gain = 616.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for u_lcd_rgb_char/u_lcd_display/u_blk_mem_gen_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1505.848 ; gain = 616.406
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'cur_state_reg' in module 'i2c_dri'
+INFO: [Synth 8-802] inferred FSM for state register 'cur_state_reg' in module 'touch_dri'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                 st_idle |                         00000001 |                         00000001
+               st_sladdr |                         00000010 |                         00000010
+               st_addr16 |                         00000100 |                         00000100
+                st_addr8 |                         00001000 |                         00001000
+              st_data_wr |                         00010000 |                         00010000
+              st_addr_rd |                         00100000 |                         00100000
+              st_data_rd |                         01000000 |                         01000000
+                 st_stop |                         10000000 |                         10000000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'cur_state_reg' in module 'i2c_dri'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                 st_idle |                          0000001 |                          0000001
+                 st_init |                          0000010 |                          0000010
+               st_get_id |                          0000100 |                          0000100
+              st_cfg_reg |                          0001000 |                          0001000
+          st_check_touch |                          0010000 |                          0010000
+            st_get_coord |                          0100000 |                          0100000
+         st_coord_handle |                          1000000 |                          1000000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'cur_state_reg' in module 'touch_dri'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1505.848 ; gain = 616.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   18 Bit       Adders := 2     
+	   2 Input   17 Bit       Adders := 1     
+	   2 Input   11 Bit       Adders := 5     
+	   3 Input   11 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 2     
+	   2 Input    8 Bit       Adders := 3     
+	   2 Input    7 Bit       Adders := 2     
+	   2 Input    6 Bit       Adders := 3     
+	   2 Input    5 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 3     
++---Registers : 
+	              512 Bit    Registers := 9     
+	              160 Bit    Registers := 88    
+	               64 Bit    Registers := 85    
+	               32 Bit    Registers := 17    
+	               24 Bit    Registers := 1     
+	               22 Bit    Registers := 1     
+	               20 Bit    Registers := 1     
+	               18 Bit    Registers := 2     
+	               17 Bit    Registers := 1     
+	               16 Bit    Registers := 9     
+	               12 Bit    Registers := 1     
+	               11 Bit    Registers := 5     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 6     
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 27    
++---Muxes : 
+	  16 Input   32 Bit        Muxes := 1     
+	   2 Input   24 Bit        Muxes := 18    
+	   2 Input   22 Bit        Muxes := 3     
+	   2 Input   18 Bit        Muxes := 2     
+	   2 Input   17 Bit        Muxes := 1     
+	   7 Input   16 Bit        Muxes := 7     
+	   2 Input   16 Bit        Muxes := 9     
+	   8 Input   16 Bit        Muxes := 1     
+	   6 Input   16 Bit        Muxes := 2     
+	   2 Input   11 Bit        Muxes := 6     
+	  22 Input    8 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 20    
+	   9 Input    8 Bit        Muxes := 2     
+	   8 Input    8 Bit        Muxes := 1     
+	   7 Input    8 Bit        Muxes := 2     
+	   3 Input    8 Bit        Muxes := 1     
+	  31 Input    7 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 12    
+	  29 Input    7 Bit        Muxes := 1     
+	  33 Input    7 Bit        Muxes := 1     
+	  22 Input    7 Bit        Muxes := 1     
+	   6 Input    7 Bit        Muxes := 1     
+	   9 Input    7 Bit        Muxes := 1     
+	   8 Input    7 Bit        Muxes := 2     
+	   7 Input    7 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 4     
+	   2 Input    5 Bit        Muxes := 5     
+	   3 Input    5 Bit        Muxes := 1     
+	  20 Input    5 Bit        Muxes := 1     
+	   5 Input    5 Bit        Muxes := 1     
+	  32 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 6     
+	   7 Input    4 Bit        Muxes := 3     
+	   6 Input    4 Bit        Muxes := 1     
+	  13 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 11    
+	   4 Input    3 Bit        Muxes := 1     
+	   5 Input    3 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 3     
+	   2 Input    2 Bit        Muxes := 6     
+	   3 Input    2 Bit        Muxes := 1     
+	 512 Input    1 Bit        Muxes := 5     
+	  64 Input    1 Bit        Muxes := 3     
+	  32 Input    1 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 69    
+	  29 Input    1 Bit        Muxes := 9     
+	  22 Input    1 Bit        Muxes := 6     
+	  31 Input    1 Bit        Muxes := 8     
+	  33 Input    1 Bit        Muxes := 4     
+	   6 Input    1 Bit        Muxes := 8     
+	   9 Input    1 Bit        Muxes := 14    
+	   7 Input    1 Bit        Muxes := 34    
+	   8 Input    1 Bit        Muxes := 3     
+	   4 Input    1 Bit        Muxes := 1     
+	   3 Input    1 Bit        Muxes := 1     
+	   5 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:44 ; elapsed = 00:00:44 . Memory (MB): peak = 1505.848 ; gain = 616.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++------------+-------------------+---------------+----------------+
+|Module Name | RTL Object        | Depth x Width | Implemented As | 
++------------+-------------------+---------------+----------------+
+|i2c_dri     | sda_out           | 64x1          | LUT            | 
+|i2c_dri     | scl               | 64x1          | LUT            | 
+|i2c_dri     | scl               | 64x1          | LUT            | 
+|touch_top   | u_i2c_dri/sda_out | 64x1          | LUT            | 
+|touch_top   | u_i2c_dri/scl     | 64x1          | LUT            | 
+|touch_top   | u_i2c_dri/scl     | 64x1          | LUT            | 
++------------+-------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:48 ; elapsed = 00:00:49 . Memory (MB): peak = 1505.848 ; gain = 616.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:48 ; elapsed = 00:00:49 . Memory (MB): peak = 1505.848 ; gain = 616.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:49 ; elapsed = 00:00:50 . Memory (MB): peak = 1505.848 ; gain = 616.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:53 ; elapsed = 00:00:54 . Memory (MB): peak = 1505.848 ; gain = 616.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:53 ; elapsed = 00:00:54 . Memory (MB): peak = 1505.848 ; gain = 616.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:53 ; elapsed = 00:00:54 . Memory (MB): peak = 1505.848 ; gain = 616.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:53 ; elapsed = 00:00:54 . Memory (MB): peak = 1505.848 ; gain = 616.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:53 ; elapsed = 00:00:54 . Memory (MB): peak = 1505.848 ; gain = 616.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:53 ; elapsed = 00:00:54 . Memory (MB): peak = 1505.848 ; gain = 616.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |blk_mem_gen_0 |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |blk_mem_gen |     1|
+|2     |BUFG        |     4|
+|3     |CARRY4      |    32|
+|4     |LUT1        |    17|
+|5     |LUT2        |   216|
+|6     |LUT3        |   161|
+|7     |LUT4        |   139|
+|8     |LUT5        |   259|
+|9     |LUT6        |   752|
+|10    |MUXF7       |    73|
+|11    |MUXF8       |    16|
+|12    |FDCE        |   425|
+|13    |FDPE        |    24|
+|14    |IBUF        |     2|
+|15    |IOBUF       |     1|
+|16    |OBUF        |     9|
+|17    |OBUFT       |    25|
++------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:53 ; elapsed = 00:00:54 . Memory (MB): peak = 1505.848 ; gain = 616.406
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:42 ; elapsed = 00:00:50 . Memory (MB): peak = 1505.848 ; gain = 545.160
+Synthesis Optimization Complete : Time (s): cpu = 00:00:53 ; elapsed = 00:00:54 . Memory (MB): peak = 1505.848 ; gain = 616.406
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1515.668 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 122 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1519.336 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instance 
+
+Synth Design complete | Checksum: 856189b1
+INFO: [Common 17-83] Releasing license: Synthesis
+56 Infos, 36 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:57 ; elapsed = 00:00:59 . Memory (MB): peak = 1519.336 ; gain = 1038.543
+INFO: [Common 17-1381] The checkpoint 'E:/Xilinx/FPGA_Prjs/dzy/Automatic vending machine/prj/Auto_Vending_Machine/Auto_Vending_Machine.runs/synth_1/top_lcd_touch_FSM.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_lcd_touch_FSM_utilization_synth.rpt -pb top_lcd_touch_FSM_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 11 22:39:51 2023...

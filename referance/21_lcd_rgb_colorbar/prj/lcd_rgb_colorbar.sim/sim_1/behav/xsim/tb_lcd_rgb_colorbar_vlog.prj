@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../rtl/clk_div.v" \
+"../../../../../rtl/lcd_display.v" \
+"../../../../../rtl/lcd_driver.v" \
+"../../../../../rtl/lcd_rgb_colorbar.v" \
+"../../../../../rtl/rd_id.v" \
+"../../../../../sim/tb_lcd_rgb_colorbar.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

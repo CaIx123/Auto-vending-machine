@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Thu Nov 16 23:20:43 2023
+# Process ID: 9324
+# Current directory: E:/Xilinx/FPGA_Prjs/dzy/referance/top_lcd_touch_4_3_800_640/prj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7632 E:\Xilinx\FPGA_Prjs\dzy\referance\top_lcd_touch_4_3_800_640\prj\top_lcd_touch.xpr
+# Log file: E:/Xilinx/FPGA_Prjs/dzy/referance/top_lcd_touch_4_3_800_640/prj/vivado.log
+# Journal file: E:/Xilinx/FPGA_Prjs/dzy/referance/top_lcd_touch_4_3_800_640/prj\vivado.jou
+# Running On: xyh, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 8, Host memory: 16889 MB
+#-----------------------------------------------------------
+start_gui
+open_project E:/Xilinx/FPGA_Prjs/dzy/referance/top_lcd_touch_4_3_800_640/prj/top_lcd_touch.xpr
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files E:/Xilinx/FPGA_Prjs/dzy/referance/top_lcd_touch_4_3_800_640/rtl/lcd_rgb_char/rd_id.v] -no_script -reset -force -quiet
+remove_files  E:/Xilinx/FPGA_Prjs/dzy/referance/top_lcd_touch_4_3_800_640/rtl/lcd_rgb_char/rd_id.v
+synth_design -top top_lcd_touch -part xc7z020clg400-2 -lint 
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+wait_on_run synth_1
+launch_runs impl_1 -jobs 12
+wait_on_run impl_1
+open_run impl_1

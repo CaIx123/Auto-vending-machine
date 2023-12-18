@@ -1,0 +1,14 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA/wang/7020/11_lcd_rgb_colorbar/rtl/clk_div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_div
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA/wang/7020/11_lcd_rgb_colorbar/rtl/lcd_display.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lcd_display
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA/wang/7020/11_lcd_rgb_colorbar/rtl/lcd_driver.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lcd_driver
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA/wang/7020/11_lcd_rgb_colorbar/rtl/lcd_rgb_colorbar.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lcd_rgb_colorbar
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA/wang/7020/11_lcd_rgb_colorbar/rtl/rd_id.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rd_id
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA/wang/7020/11_lcd_rgb_colorbar/sim/tb_lcd_rgb_colorbar.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_lcd_rgb_colorbar
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA/wang/7020/11_lcd_rgb_colorbar/prj/lcd_rgb_colorbar.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

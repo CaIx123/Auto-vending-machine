@@ -1,0 +1,11 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+E:/FPGA/wang/7020/11_lcd_rgb_colorbar/prj/lcd_rgb_colorbar.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
+E:/FPGA/wang/7020/11_lcd_rgb_colorbar/rtl/clk_div.v,1681806983,verilog,,E:/FPGA/wang/7020/11_lcd_rgb_colorbar/rtl/lcd_display.v,,clk_div,,,,,,,,
+E:/FPGA/wang/7020/11_lcd_rgb_colorbar/rtl/lcd_display.v,1686043024,verilog,,E:/FPGA/wang/7020/11_lcd_rgb_colorbar/rtl/lcd_driver.v,,lcd_display,,,,,,,,
+E:/FPGA/wang/7020/11_lcd_rgb_colorbar/rtl/lcd_driver.v,1687247225,verilog,,E:/FPGA/wang/7020/11_lcd_rgb_colorbar/rtl/lcd_rgb_colorbar.v,,lcd_driver,,,,,,,,
+E:/FPGA/wang/7020/11_lcd_rgb_colorbar/rtl/lcd_rgb_colorbar.v,1686032699,verilog,,E:/FPGA/wang/7020/11_lcd_rgb_colorbar/rtl/rd_id.v,,lcd_rgb_colorbar,,,,,,,,
+E:/FPGA/wang/7020/11_lcd_rgb_colorbar/rtl/rd_id.v,1627800982,verilog,,E:/FPGA/wang/7020/11_lcd_rgb_colorbar/sim/tb_lcd_rgb_colorbar.v,,rd_id,,,,,,,,
+E:/FPGA/wang/7020/11_lcd_rgb_colorbar/sim/tb_lcd_rgb_colorbar.v,1681725101,verilog,,,,tb_lcd_rgb_colorbar,,,,,,,,

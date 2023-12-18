@@ -1,0 +1,34 @@
+# //  ModelSim SE-64 10.5 Feb 13 2016 
+# //
+# //  Copyright 1991-2016 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do {tb_lcd_rgb_colorbar_simulate.do}
+# vsim -voptargs=""+acc"" -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -lib xil_defaultlib xil_defaultlib.tb_lcd_rgb_colorbar xil_defaultlib.glbl 
+# Start time: 15:04:27 on Jun 25,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: ../../../../../sim/tb_lcd_rgb_colorbar.v(27): (vopt-2685) [TFMPC] - Too few port connections for 'u_lcd_rgb_colorbar'.  Expected 9, found 8.
+# ** Warning: ../../../../../sim/tb_lcd_rgb_colorbar.v(27): (vopt-2718) [TFMPC] - Missing connection for port 'lcd_rst'.
+# Loading work.tb_lcd_rgb_colorbar(fast)
+# Loading work.lcd_rgb_colorbar(fast)
+# Loading work.rd_id(fast)
+# Loading work.clk_div(fast)
+# Loading work.lcd_display(fast)
+# Loading work.lcd_driver(fast)
+# Loading work.glbl(fast)
+# 1
+# 1
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+add wave -position insertpoint sim:/tb_lcd_rgb_colorbar/u_lcd_rgb_colorbar/u_lcd_driver/*
+# End time: 15:05:00 on Jun 25,2023, Elapsed time: 0:00:33
+# Errors: 0, Warnings: 2

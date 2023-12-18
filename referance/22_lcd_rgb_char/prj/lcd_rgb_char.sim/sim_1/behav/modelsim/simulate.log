@@ -1,0 +1,53 @@
+# //  ModelSim SE-64 10.5 Feb 13 2016 
+# //
+# //  Copyright 1991-2016 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do {tb_lcd_rgb_char_simulate.do}
+# vsim -voptargs=""+acc"" -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm -lib xil_defaultlib xil_defaultlib.tb_lcd_rgb_char xil_defaultlib.glbl 
+# Start time: 15:06:13 on Jun 25,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: ../../../../../sim/tb_lcd_rgb_char.v(27): (vopt-2685) [TFMPC] - Too few port connections for 'u_lcd_rgb_char'.  Expected 9, found 8.
+# ** Warning: ../../../../../sim/tb_lcd_rgb_char.v(27): (vopt-2718) [TFMPC] - Missing connection for port 'lcd_rst'.
+# Loading work.tb_lcd_rgb_char(fast)
+# Loading work.lcd_rgb_char(fast)
+# Loading work.rd_id(fast)
+# Loading work.clk_div(fast)
+# Loading work.lcd_display(fast)
+# Loading work.blk_mem_gen_0(fast)
+# Loading unisims_ver.GND(fast)
+# Loading unisims_ver.LUT4(fast)
+# Loading unisims_ver.LUT6(fast)
+# Loading unisims_ver.LUT3(fast)
+# Loading unisims_ver.FDRE(fast)
+# Loading unisims_ver.RAMB36E1(fast)
+# Loading unisims_ver.RB36_INTERNAL_VLOG(fast)
+# Loading unisims_ver.RAMB36E1(fast__1)
+# Loading unisims_ver.RAMB18E1(fast)
+# Loading unisims_ver.RB18_INTERNAL_VLOG(fast)
+# Loading unisims_ver.RAMB36E1(fast__2)
+# Loading unisims_ver.LUT3(fast__1)
+# Loading unisims_ver.RAMB36E1(fast__3)
+# Loading unisims_ver.LUT3(fast__2)
+# Loading unisims_ver.RAMB36E1(fast__4)
+# Loading unisims_ver.RB36_INTERNAL_VLOG(fast__1)
+# Loading unisims_ver.RAMB36E1(fast__5)
+# Loading unisims_ver.RAMB36E1(fast__6)
+# Loading work.lcd_driver(fast)
+# Loading work.glbl(fast)
+# 1
+# 1
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+add wave -position insertpoint sim:/tb_lcd_rgb_char/u_lcd_rgb_char/u_lcd_driver/*
+# End time: 15:06:42 on Jun 25,2023, Elapsed time: 0:00:29
+# Errors: 0, Warnings: 2

@@ -1,0 +1,356 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Thu Nov 16 23:23:52 2023
+# Process ID: 6120
+# Current directory: E:/Xilinx/FPGA_Prjs/dzy/referance/top_lcd_touch_4_3_800_640/prj/top_lcd_touch.runs/synth_1
+# Command line: vivado.exe -log top_lcd_touch.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_lcd_touch.tcl
+# Log file: E:/Xilinx/FPGA_Prjs/dzy/referance/top_lcd_touch_4_3_800_640/prj/top_lcd_touch.runs/synth_1/top_lcd_touch.vds
+# Journal file: E:/Xilinx/FPGA_Prjs/dzy/referance/top_lcd_touch_4_3_800_640/prj/top_lcd_touch.runs/synth_1\vivado.jou
+# Running On: xyh, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 8, Host memory: 16889 MB
+#-----------------------------------------------------------
+source top_lcd_touch.tcl -notrace
+create_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 445.457 ; gain = 163.766
+Command: synth_design -top top_lcd_touch -part xc7z020clg400-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-2
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 15156
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1289.621 ; gain = 411.617
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_lcd_touch' [E:/Xilinx/FPGA_Prjs/dzy/referance/top_lcd_touch_4_3_800_640/rtl/top_lcd_touch.v:18]
+INFO: [Synth 8-6157] synthesizing module 'touch_top' [E:/Xilinx/FPGA_Prjs/dzy/referance/top_lcd_touch_4_3_800_640/rtl/touch/touch_top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'i2c_dri' [E:/Xilinx/FPGA_Prjs/dzy/referance/top_lcd_touch_4_3_800_640/rtl/touch/i2c_dri.v:1]
+	Parameter CLK_FREQ bound to: 50000000 - type: integer 
+	Parameter I2C_FREQ bound to: 250000 - type: integer 
+	Parameter WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Xilinx/FPGA_Prjs/dzy/referance/top_lcd_touch_4_3_800_640/rtl/touch/i2c_dri.v:210]
+INFO: [Synth 8-6155] done synthesizing module 'i2c_dri' (0#1) [E:/Xilinx/FPGA_Prjs/dzy/referance/top_lcd_touch_4_3_800_640/rtl/touch/i2c_dri.v:1]
+INFO: [Synth 8-6157] synthesizing module 'touch_dri' [E:/Xilinx/FPGA_Prjs/dzy/referance/top_lcd_touch_4_3_800_640/rtl/touch/touch_dri.v:1]
+	Parameter WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'touch_dri' (0#1) [E:/Xilinx/FPGA_Prjs/dzy/referance/top_lcd_touch_4_3_800_640/rtl/touch/touch_dri.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'touch_top' (0#1) [E:/Xilinx/FPGA_Prjs/dzy/referance/top_lcd_touch_4_3_800_640/rtl/touch/touch_top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'lcd_rgb_char' [E:/Xilinx/FPGA_Prjs/dzy/referance/top_lcd_touch_4_3_800_640/rtl/lcd_rgb_char/lcd_rgb_char.v:18]
+INFO: [Synth 8-6157] synthesizing module 'clk_div' [E:/Xilinx/FPGA_Prjs/dzy/referance/top_lcd_touch_4_3_800_640/rtl/lcd_rgb_char/clk_div.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'clk_div' (0#1) [E:/Xilinx/FPGA_Prjs/dzy/referance/top_lcd_touch_4_3_800_640/rtl/lcd_rgb_char/clk_div.v:1]
+INFO: [Synth 8-6157] synthesizing module 'binary2bcd' [E:/Xilinx/FPGA_Prjs/dzy/referance/top_lcd_touch_4_3_800_640/rtl/lcd_rgb_char/binary2bcd.v:19]
+INFO: [Synth 8-6155] done synthesizing module 'binary2bcd' (0#1) [E:/Xilinx/FPGA_Prjs/dzy/referance/top_lcd_touch_4_3_800_640/rtl/lcd_rgb_char/binary2bcd.v:19]
+INFO: [Synth 8-6157] synthesizing module 'lcd_display' [E:/Xilinx/FPGA_Prjs/dzy/referance/top_lcd_touch_4_3_800_640/rtl/lcd_rgb_char/lcd_display.v:19]
+INFO: [Synth 8-6155] done synthesizing module 'lcd_display' (0#1) [E:/Xilinx/FPGA_Prjs/dzy/referance/top_lcd_touch_4_3_800_640/rtl/lcd_rgb_char/lcd_display.v:19]
+INFO: [Synth 8-6157] synthesizing module 'lcd_driver' [E:/Xilinx/FPGA_Prjs/dzy/referance/top_lcd_touch_4_3_800_640/rtl/lcd_rgb_char/lcd_driver.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'lcd_driver' (0#1) [E:/Xilinx/FPGA_Prjs/dzy/referance/top_lcd_touch_4_3_800_640/rtl/lcd_rgb_char/lcd_driver.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'lcd_rgb_char' (0#1) [E:/Xilinx/FPGA_Prjs/dzy/referance/top_lcd_touch_4_3_800_640/rtl/lcd_rgb_char/lcd_rgb_char.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'top_lcd_touch' (0#1) [E:/Xilinx/FPGA_Prjs/dzy/referance/top_lcd_touch_4_3_800_640/rtl/top_lcd_touch.v:18]
+WARNING: [Synth 8-7129] Port data[15] in module lcd_display is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[14] in module lcd_display is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[13] in module lcd_display is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[12] in module lcd_display is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1403.098 ; gain = 525.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1403.098 ; gain = 525.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1403.098 ; gain = 525.094
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.440 . Memory (MB): peak = 1403.098 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/Xilinx/FPGA_Prjs/dzy/referance/top_lcd_touch_4_3_800_640/prj/top_lcd_touch.srcs/constrs_1/new/top_lcd_touch.xdc]
+Finished Parsing XDC File [E:/Xilinx/FPGA_Prjs/dzy/referance/top_lcd_touch_4_3_800_640/prj/top_lcd_touch.srcs/constrs_1/new/top_lcd_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/Xilinx/FPGA_Prjs/dzy/referance/top_lcd_touch_4_3_800_640/prj/top_lcd_touch.srcs/constrs_1/new/top_lcd_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_lcd_touch_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_lcd_touch_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1487.352 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.041 . Memory (MB): peak = 1487.352 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:49 ; elapsed = 00:00:51 . Memory (MB): peak = 1487.352 ; gain = 609.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:49 ; elapsed = 00:00:51 . Memory (MB): peak = 1487.352 ; gain = 609.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:49 ; elapsed = 00:00:51 . Memory (MB): peak = 1487.352 ; gain = 609.348
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'cur_state_reg' in module 'i2c_dri'
+INFO: [Synth 8-802] inferred FSM for state register 'cur_state_reg' in module 'touch_dri'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                 st_idle |                         00000001 |                         00000001
+               st_sladdr |                         00000010 |                         00000010
+               st_addr16 |                         00000100 |                         00000100
+                st_addr8 |                         00001000 |                         00001000
+              st_data_wr |                         00010000 |                         00010000
+              st_addr_rd |                         00100000 |                         00100000
+              st_data_rd |                         01000000 |                         01000000
+                 st_stop |                         10000000 |                         10000000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'cur_state_reg' in module 'i2c_dri'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                 st_idle |                          0000001 |                          0000001
+                 st_init |                          0000010 |                          0000010
+               st_get_id |                          0000100 |                          0000100
+              st_cfg_reg |                          0001000 |                          0001000
+          st_check_touch |                          0010000 |                          0010000
+            st_get_coord |                          0100000 |                          0100000
+         st_coord_handle |                          1000000 |                          1000000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'cur_state_reg' in module 'touch_dri'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:56 ; elapsed = 00:00:58 . Memory (MB): peak = 1487.352 ; gain = 609.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   11 Bit       Adders := 4     
+	   2 Input   10 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 2     
+	   2 Input    7 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 8     
++---Registers : 
+	              512 Bit    Registers := 10    
+	               32 Bit    Registers := 3     
+	               24 Bit    Registers := 1     
+	               16 Bit    Registers := 11    
+	               11 Bit    Registers := 4     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 6     
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 24    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 6     
+	   2 Input   24 Bit        Muxes := 9     
+	   3 Input   24 Bit        Muxes := 1     
+	   7 Input   16 Bit        Muxes := 7     
+	   2 Input   16 Bit        Muxes := 9     
+	   8 Input   16 Bit        Muxes := 1     
+	   6 Input   16 Bit        Muxes := 2     
+	   2 Input   11 Bit        Muxes := 4     
+	  22 Input    8 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 20    
+	   9 Input    8 Bit        Muxes := 2     
+	   8 Input    8 Bit        Muxes := 1     
+	   7 Input    8 Bit        Muxes := 2     
+	   3 Input    8 Bit        Muxes := 1     
+	  31 Input    7 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 10    
+	  29 Input    7 Bit        Muxes := 1     
+	  33 Input    7 Bit        Muxes := 1     
+	  22 Input    7 Bit        Muxes := 1     
+	   6 Input    7 Bit        Muxes := 1     
+	   9 Input    7 Bit        Muxes := 1     
+	   8 Input    7 Bit        Muxes := 2     
+	   7 Input    7 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 4     
+	   3 Input    5 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 6     
+	   2 Input    4 Bit        Muxes := 4     
+	   7 Input    4 Bit        Muxes := 3     
+	   6 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 6     
+	   2 Input    2 Bit        Muxes := 6     
+	   2 Input    1 Bit        Muxes := 63    
+	  29 Input    1 Bit        Muxes := 9     
+	  22 Input    1 Bit        Muxes := 6     
+	  31 Input    1 Bit        Muxes := 8     
+	  33 Input    1 Bit        Muxes := 4     
+	   6 Input    1 Bit        Muxes := 8     
+	   9 Input    1 Bit        Muxes := 14    
+	   7 Input    1 Bit        Muxes := 34    
+	   8 Input    1 Bit        Muxes := 3     
+	   4 Input    1 Bit        Muxes := 1     
+	   3 Input    1 Bit        Muxes := 1     
+	 512 Input    1 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:39 ; elapsed = 00:02:41 . Memory (MB): peak = 1487.352 ; gain = 609.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++------------+-------------------+---------------+----------------+
+|Module Name | RTL Object        | Depth x Width | Implemented As | 
++------------+-------------------+---------------+----------------+
+|i2c_dri     | sda_out           | 64x1          | LUT            | 
+|i2c_dri     | scl               | 64x1          | LUT            | 
+|i2c_dri     | scl               | 64x1          | LUT            | 
+|touch_top   | u_i2c_dri/sda_out | 64x1          | LUT            | 
+|touch_top   | u_i2c_dri/scl     | 64x1          | LUT            | 
+|touch_top   | u_i2c_dri/scl     | 64x1          | LUT            | 
++------------+-------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:45 ; elapsed = 00:02:48 . Memory (MB): peak = 1487.352 ; gain = 609.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:47 ; elapsed = 00:02:49 . Memory (MB): peak = 1487.352 ; gain = 609.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:49 ; elapsed = 00:02:51 . Memory (MB): peak = 1559.070 ; gain = 681.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:54 ; elapsed = 00:02:57 . Memory (MB): peak = 1573.852 ; gain = 695.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:54 ; elapsed = 00:02:57 . Memory (MB): peak = 1573.852 ; gain = 695.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:54 ; elapsed = 00:02:57 . Memory (MB): peak = 1573.852 ; gain = 695.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:55 ; elapsed = 00:02:57 . Memory (MB): peak = 1573.852 ; gain = 695.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:55 ; elapsed = 00:02:57 . Memory (MB): peak = 1573.852 ; gain = 695.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:55 ; elapsed = 00:02:57 . Memory (MB): peak = 1573.852 ; gain = 695.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     3|
+|2     |CARRY4 |     7|
+|3     |LUT1   |    10|
+|4     |LUT2   |   101|
+|5     |LUT3   |   161|
+|6     |LUT4   |   276|
+|7     |LUT5   |   167|
+|8     |LUT6   |  1384|
+|9     |MUXF7  |     1|
+|10    |FDCE   |   390|
+|11    |FDPE   |     7|
+|12    |IBUF   |     2|
+|13    |IOBUF  |     1|
+|14    |OBUF   |     8|
+|15    |OBUFT  |    25|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:55 ; elapsed = 00:02:57 . Memory (MB): peak = 1573.852 ; gain = 695.848
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:13 ; elapsed = 00:02:43 . Memory (MB): peak = 1573.852 ; gain = 611.594
+Synthesis Optimization Complete : Time (s): cpu = 00:02:55 ; elapsed = 00:02:57 . Memory (MB): peak = 1573.852 ; gain = 695.848
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 1585.953 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1589.617 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instance 
+
+Synth Design complete | Checksum: 75b837f4
+INFO: [Common 17-83] Releasing license: Synthesis
+38 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:03:14 ; elapsed = 00:03:18 . Memory (MB): peak = 1589.617 ; gain = 1144.156
+INFO: [Common 17-1381] The checkpoint 'E:/Xilinx/FPGA_Prjs/dzy/referance/top_lcd_touch_4_3_800_640/prj/top_lcd_touch.runs/synth_1/top_lcd_touch.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_lcd_touch_utilization_synth.rpt -pb top_lcd_touch_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 16 23:27:34 2023...

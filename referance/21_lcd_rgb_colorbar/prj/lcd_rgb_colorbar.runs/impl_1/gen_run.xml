@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z020clg400-2" LaunchTime="1687676428">
+  <File Type="ROUTE-PWR" Name="lcd_rgb_colorbar_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="lcd_rgb_colorbar.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="lcd_rgb_colorbar_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="lcd_rgb_colorbar_reports.tcl"/>
+  <File Type="BITSTR-MSK" Name="lcd_rgb_colorbar.msk"/>
+  <File Type="ROUTE-CLK" Name="lcd_rgb_colorbar_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="lcd_rgb_colorbar.vdi"/>
+  <File Type="BG-BIT" Name="lcd_rgb_colorbar.bit"/>
+  <File Type="BG-DRC" Name="lcd_rgb_colorbar.drc"/>
+  <File Type="BG-BGN" Name="lcd_rgb_colorbar.bgn"/>
+  <File Type="BG-BIN" Name="lcd_rgb_colorbar.bin"/>
+  <File Type="BITSTR-RBT" Name="lcd_rgb_colorbar.rbt"/>
+  <File Type="BITSTR-NKY" Name="lcd_rgb_colorbar.nky"/>
+  <File Type="BITSTR-BMM" Name="lcd_rgb_colorbar_bd.bmm"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="lcd_rgb_colorbar_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MMI" Name="lcd_rgb_colorbar.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="lcd_rgb_colorbar.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="lcd_rgb_colorbar.ltx"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="OPT-DRC" Name="lcd_rgb_colorbar_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="lcd_rgb_colorbar.hwdef"/>
+  <File Type="PLACE-IO" Name="lcd_rgb_colorbar_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="lcd_rgb_colorbar_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="lcd_rgb_colorbar_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="lcd_rgb_colorbar_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="lcd_rgb_colorbar_incremental_reuse_pre_placed.rpt"/>
+  <File Type="ROUTE-DRC" Name="lcd_rgb_colorbar_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="lcd_rgb_colorbar_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="lcd_rgb_colorbar_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="lcd_rgb_colorbar_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="lcd_rgb_colorbar_route_status.pb"/>
+  <File Type="ROUTE-DCP" Name="lcd_rgb_colorbar_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="lcd_rgb_colorbar_routed_error.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="lcd_rgb_colorbar_routed_bb.dcp"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="lcd_rgb_colorbar_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="lcd_rgb_colorbar_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="lcd_rgb_colorbar_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-BUS-SKEW" Name="lcd_rgb_colorbar_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="lcd_rgb_colorbar_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="lcd_rgb_colorbar_bus_skew_routed.rpx"/>
+  <File Type="OPT-DCP" Name="lcd_rgb_colorbar_opt.dcp"/>
+  <File Type="PLACE-DCP" Name="lcd_rgb_colorbar_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="lcd_rgb_colorbar_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="lcd_rgb_colorbar_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="lcd_rgb_colorbar_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="lcd_rgb_colorbar_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="lcd_rgb_colorbar_postroute_physopt_bb.dcp"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="lcd_rgb_colorbar_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="lcd_rgb_colorbar_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="lcd_rgb_colorbar_methodology_drc_routed.rpx"/>
+  <File Type="PDI-FILE" Name="lcd_rgb_colorbar.pdi"/>
+  <File Type="RCFI_FILE" Name="lcd_rgb_colorbar.rcfi"/>
+  <File Type="CFI_FILE" Name="lcd_rgb_colorbar.cfi"/>
+  <File Type="RNPI_FILE" Name="lcd_rgb_colorbar.rnpi"/>
+  <File Type="NPI_FILE" Name="lcd_rgb_colorbar.npi"/>
+  <File Type="RBD_FILE" Name="lcd_rgb_colorbar.rbd"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../rtl/clk_div.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../rtl/lcd_display.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../rtl/lcd_driver.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../rtl/rd_id.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../rtl/lcd_rgb_colorbar.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="lcd_rgb_colorbar"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/lcd_rgb_colorbar.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
+  </Strategy>
+</GenRun>

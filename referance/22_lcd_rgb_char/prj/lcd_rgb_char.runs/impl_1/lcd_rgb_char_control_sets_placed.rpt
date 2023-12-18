@@ -1,0 +1,91 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Sat Dec  9 10:59:06 2023
+| Host         : xyh running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file lcd_rgb_char_control_sets_placed.rpt
+| Design       : lcd_rgb_char
+| Device       : xc7z020
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    13 |
+|    Minimum number of control sets                        |    13 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    59 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    13 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |     4 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     3 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     4 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             122 |           80 |
+| No           | No                    | Yes                    |              90 |           53 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |              97 |           36 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------+---------------------------------------------------+-------------------------+------------------+----------------+--------------+
+|    Clock Signal    |                   Enable Signal                   |     Set/Reset Signal    | Slice Load Count | Bel Load Count | Bels / Slice |
++--------------------+---------------------------------------------------+-------------------------+------------------+----------------+--------------+
+|  sys_clk_IBUF_BUFG |                                                   | u_lcd_display/sys_rst_n |                2 |              3 |         1.50 |
+|  lcd_clk_OBUF_BUFG | u_lcd_display/u_binary2bcd/data_shift[13]_i_1_n_0 | u_lcd_display/sys_rst_n |                2 |              4 |         2.00 |
+|  lcd_clk_OBUF_BUFG | u_lcd_display/u_binary2bcd/data_shift[21]_i_1_n_0 | u_lcd_display/sys_rst_n |                1 |              4 |         4.00 |
+|  lcd_clk_OBUF_BUFG | u_lcd_display/u_binary2bcd/data_shift[17]_i_1_n_0 | u_lcd_display/sys_rst_n |                1 |              4 |         4.00 |
+|  lcd_clk_OBUF_BUFG | u_lcd_display/u_binary2bcd/shift_flag             | u_lcd_display/sys_rst_n |                2 |              5 |         2.50 |
+|  lcd_clk_OBUF_BUFG | u_lcd_display/u_binary2bcd/data_shift[9]_i_1_n_0  | u_lcd_display/sys_rst_n |                3 |             10 |         3.33 |
+|  lcd_clk_OBUF_BUFG | u_lcd_driver/sel                                  | u_lcd_display/sys_rst_n |                4 |             11 |         2.75 |
+|  sys_clk_IBUF_BUFG | u_rd_id/rd_flag_i_1_n_0                           | u_lcd_display/sys_rst_n |                3 |             11 |         3.67 |
+|  lcd_clk_OBUF_BUFG | u_lcd_display/u_binary2bcd/bcd_data[11]_i_1_n_0   | u_lcd_display/sys_rst_n |                7 |             12 |         1.71 |
+|  lcd_clk_OBUF_BUFG | u_lcd_driver/E[0]                                 | u_lcd_display/sys_rst_n |                7 |             18 |         2.57 |
+|  lcd_clk_OBUF_BUFG | u_lcd_driver/pixel_ypos_reg[9]_0[0]               | u_lcd_display/sys_rst_n |                6 |             18 |         3.00 |
+|  lcd_clk_OBUF_BUFG |                                                   | u_lcd_display/sys_rst_n |               51 |             87 |         1.71 |
+|  lcd_clk_OBUF_BUFG |                                                   |                         |               80 |            122 |         1.52 |
++--------------------+---------------------------------------------------+-------------------------+------------------+----------------+--------------+
+
+

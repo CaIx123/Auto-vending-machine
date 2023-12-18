@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../lcd_rgb_char.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v" \
+"../../../../../rtl/clk_div.v" \
+"../../../../../rtl/lcd_display.v" \
+"../../../../../rtl/lcd_driver.v" \
+"../../../../../rtl/lcd_rgb_char.v" \
+"../../../../../rtl/rd_id.v" \
+"../../../../../sim/tb_lcd_rgb_char.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

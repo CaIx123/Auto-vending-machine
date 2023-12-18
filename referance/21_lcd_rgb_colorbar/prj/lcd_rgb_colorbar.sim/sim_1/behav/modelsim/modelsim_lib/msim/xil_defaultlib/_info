@@ -1,0 +1,167 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Admin/Desktop/7020/11_lcd_rgb_colorbar/prj/lcd_rgb_colorbar.sim/sim_1/behav/modelsim
+T_opt
+!s110 1687676667
+VedaVZ9NiWPgoDl0jO?lOY0
+04 19 4 work tb_lcd_rgb_colorbar fast 0
+04 4 4 work glbl fast 0
+=1-d8bbc14fe465-6497e6fb-219-163c
+o-quiet -auto_acc_if_foreign -work xil_defaultlib -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;10.5;63
+vclk_div
+Z2 !s110 1687676663
+!i10b 1
+!s100 I7@MmTGIA;6CgU7C;D3S83
+IU<^:7eXdnMUh9>8CP:8m;3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1681806983
+8../../../../../rtl/clk_div.v
+F../../../../../rtl/clk_div.v
+Z4 L0 23
+Z5 OL;L;10.5;63
+r1
+!s85 0
+31
+Z6 !s108 1687676663.000000
+Z7 !s107 ../../../../../sim/tb_lcd_rgb_colorbar.v|../../../../../rtl/rd_id.v|../../../../../rtl/lcd_rgb_colorbar.v|../../../../../rtl/lcd_driver.v|../../../../../rtl/lcd_display.v|../../../../../rtl/clk_div.v|
+Z8 !s90 -incr|-work|xil_defaultlib|../../../../../rtl/clk_div.v|../../../../../rtl/lcd_display.v|../../../../../rtl/lcd_driver.v|../../../../../rtl/lcd_rgb_colorbar.v|../../../../../rtl/rd_id.v|../../../../../sim/tb_lcd_rgb_colorbar.v|
+!i113 0
+Z9 o-work xil_defaultlib -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vglbl
+R2
+!i10b 1
+!s100 aGX4R92RO3^bD43HL2j:J2
+Ii@2]DfVnUU[WE=M5a<e[a3
+R3
+R0
+w1605673889
+8glbl.v
+Fglbl.v
+L0 6
+R5
+r1
+!s85 0
+31
+R6
+!s107 glbl.v|
+!s90 -work|xil_defaultlib|glbl.v|
+!i113 0
+R9
+R1
+vlcd_display
+R2
+!i10b 1
+!s100 TkY@R7aIWai<@U@P_2O4J0
+IFf0SWKnz1igJGJQ;VP9KG3
+R3
+R0
+w1686043024
+8../../../../../rtl/lcd_display.v
+F../../../../../rtl/lcd_display.v
+R4
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+vlcd_driver
+R2
+!i10b 1
+!s100 SJZ3QI>c=KNz]P3lYj^S>2
+I4`hfBkU3E9Zm[BJND;^OX0
+R3
+R0
+w1687247225
+8../../../../../rtl/lcd_driver.v
+F../../../../../rtl/lcd_driver.v
+R4
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+vlcd_rgb_colorbar
+R2
+!i10b 1
+!s100 >zL8H5H1;:XVUQeEoSj960
+IS:X4I]1IgL@<U??e[JA1B3
+R3
+R0
+w1686032699
+8../../../../../rtl/lcd_rgb_colorbar.v
+F../../../../../rtl/lcd_rgb_colorbar.v
+R4
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+vrd_id
+R2
+!i10b 1
+!s100 b2d5_DUKc^Y7`f9Lo0OK`0
+Ih5m=PiDgMVX]afz;dEdKL2
+R3
+R0
+w1627800982
+8../../../../../rtl/rd_id.v
+F../../../../../rtl/rd_id.v
+R4
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+vtb_lcd_rgb_colorbar
+R2
+!i10b 1
+!s100 ]2T3EPjJ]Zhn9_j0^HW1C2
+IC?4IIG0fleN821Zo6f]N;2
+R3
+R0
+w1681725101
+8../../../../../sim/tb_lcd_rgb_colorbar.v
+F../../../../../sim/tb_lcd_rgb_colorbar.v
+L0 3
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1

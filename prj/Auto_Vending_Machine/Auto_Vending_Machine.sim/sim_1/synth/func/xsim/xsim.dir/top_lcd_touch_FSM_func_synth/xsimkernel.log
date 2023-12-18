@@ -1,0 +1,7 @@
+Running: xsim.dir/top_lcd_touch_FSM_func_synth/xsimk.exe -simmode gui -wdb top_lcd_touch_FSM_func_synth.wdb -simrunnum 0 -socket 57314
+Design successfully loaded
+Design Loading Memory Usage: 31940 KB (Peak: 31940 KB)
+Design Loading CPU Usage: 46 ms
+Simulation completed
+Simulation Memory Usage: 67264 KB (Peak: 67264 KB)
+Simulation CPU Usage: 656 ms

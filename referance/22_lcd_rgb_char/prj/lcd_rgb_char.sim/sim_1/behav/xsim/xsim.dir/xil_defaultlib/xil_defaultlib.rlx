@@ -1,0 +1,12 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+E:/FPGA/wang/7020/12_lcd_rgb_char/prj/lcd_rgb_char.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v,1686293726,verilog,,E:/FPGA/wang/7020/12_lcd_rgb_char/rtl/clk_div.v,,blk_mem_gen_0;blk_mem_gen_0_bindec;blk_mem_gen_0_blk_mem_gen_generic_cstr;blk_mem_gen_0_blk_mem_gen_mux;blk_mem_gen_0_blk_mem_gen_prim_width;blk_mem_gen_0_blk_mem_gen_prim_width__parameterized0;blk_mem_gen_0_blk_mem_gen_prim_width__parameterized1;blk_mem_gen_0_blk_mem_gen_prim_width__parameterized2;blk_mem_gen_0_blk_mem_gen_prim_width__parameterized3;blk_mem_gen_0_blk_mem_gen_prim_width__parameterized4;blk_mem_gen_0_blk_mem_gen_prim_width__parameterized5;blk_mem_gen_0_blk_mem_gen_prim_width__parameterized6;blk_mem_gen_0_blk_mem_gen_prim_wrapper_init;blk_mem_gen_0_blk_mem_gen_prim_wrapper_init__parameterized0;blk_mem_gen_0_blk_mem_gen_prim_wrapper_init__parameterized1;blk_mem_gen_0_blk_mem_gen_prim_wrapper_init__parameterized2;blk_mem_gen_0_blk_mem_gen_prim_wrapper_init__parameterized3;blk_mem_gen_0_blk_mem_gen_prim_wrapper_init__parameterized4;blk_mem_gen_0_blk_mem_gen_prim_wrapper_init__parameterized5;blk_mem_gen_0_blk_mem_gen_prim_wrapper_init__parameterized6;blk_mem_gen_0_blk_mem_gen_top;blk_mem_gen_0_blk_mem_gen_v8_4_4;blk_mem_gen_0_blk_mem_gen_v8_4_4_synth,,,,,,,,
+E:/FPGA/wang/7020/12_lcd_rgb_char/prj/lcd_rgb_char.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
+E:/FPGA/wang/7020/12_lcd_rgb_char/rtl/clk_div.v,1627800981,verilog,,E:/FPGA/wang/7020/12_lcd_rgb_char/rtl/lcd_display.v,,clk_div,,,,,,,,
+E:/FPGA/wang/7020/12_lcd_rgb_char/rtl/lcd_display.v,1687337689,verilog,,E:/FPGA/wang/7020/12_lcd_rgb_char/rtl/lcd_driver.v,,lcd_display,,,,,,,,
+E:/FPGA/wang/7020/12_lcd_rgb_char/rtl/lcd_driver.v,1687247225,verilog,,E:/FPGA/wang/7020/12_lcd_rgb_char/rtl/lcd_rgb_char.v,,lcd_driver,,,,,,,,
+E:/FPGA/wang/7020/12_lcd_rgb_char/rtl/lcd_rgb_char.v,1635300075,verilog,,E:/FPGA/wang/7020/12_lcd_rgb_char/rtl/rd_id.v,,lcd_rgb_char,,,,,,,,
+E:/FPGA/wang/7020/12_lcd_rgb_char/rtl/rd_id.v,1627800981,verilog,,E:/FPGA/wang/7020/12_lcd_rgb_char/sim/tb_lcd_rgb_char.v,,rd_id,,,,,,,,
+E:/FPGA/wang/7020/12_lcd_rgb_char/sim/tb_lcd_rgb_char.v,1687672494,verilog,,,,tb_lcd_rgb_char,,,,,,,,

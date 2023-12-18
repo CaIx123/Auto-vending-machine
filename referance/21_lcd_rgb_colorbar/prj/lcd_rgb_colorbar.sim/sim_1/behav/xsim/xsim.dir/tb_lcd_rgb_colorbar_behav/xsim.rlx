@@ -1,0 +1,12 @@
+
+{ 
+    crc :  4841406824865655982  , 
+    ccp_crc :  0  , 
+    cmdline : " -wto 6698daec521e412ebff626ee58d1b125 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_lcd_rgb_colorbar_behav xil_defaultlib.tb_lcd_rgb_colorbar xil_defaultlib.glbl" , 
+    buildDate : "Nov 18 2020" , 
+    buildTime : "09:47:47" , 
+    linkCmd : "G:\\Xilinx\\Vivado\\2020.2\\data\\..\\tps\\mingw\\6.2.0\\win64.o\\nt\\bin\\gcc.exe -Wa,-W  -O -Wl,--stack,104857600 -o \"xsim.dir/tb_lcd_rgb_colorbar_behav/xsimk.exe\"   \"xsim.dir/tb_lcd_rgb_colorbar_behav/obj/xsim_0.win64.obj\" \"xsim.dir/tb_lcd_rgb_colorbar_behav/obj/xsim_1.win64.obj\" -L\"G:\\Xilinx\\Vivado\\2020.2\\lib\\win64.o\" -lrdi_simulator_kernel   -lrdi_simbridge_kernel" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 
