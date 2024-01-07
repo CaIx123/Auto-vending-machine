@@ -103,15 +103,17 @@ module FSM_dri (
         end
     end
     //´¥ÃşÉú³ÉÂö³å
-    reg posedge_detect_reg;
-    reg [1:0] cnt;
-    assign touch_puse = touch_valid && (!posedge_detect_reg);
+    reg posedge_detect_reg0;
+    reg posedge_detect_reg1;
+    assign touch_puse = posedge_detect_reg0 && (!posedge_detect_reg1);
     always @ (posedge clk or negedge rst_n) begin
         if (!rst_n) begin
-            posedge_detect_reg <= 1'b0;
+            posedge_detect_reg0 <= 1'b0;
+            posedge_detect_reg1 <= 1'b0;
         end
         else begin
-            posedge_detect_reg <= touch_valid;
+            posedge_detect_reg0 <=  touch_valid;
+            posedge_detect_reg1 <=  posedge_detect_reg0;
         end
     end
 

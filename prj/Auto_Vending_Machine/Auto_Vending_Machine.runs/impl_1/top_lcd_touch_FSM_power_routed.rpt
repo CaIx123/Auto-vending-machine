@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-| Date             : Mon Dec 11 22:41:22 2023
+| Date             : Sun Jan  7 14:30:26 2024
 | Host             : xyh running 64-bit major release  (build 9200)
 | Command          : report_power -file top_lcd_touch_FSM_power_routed.rpt -pb top_lcd_touch_FSM_power_summary_routed.pb -rpx top_lcd_touch_FSM_power_routed.rpx
 | Design           : top_lcd_touch_FSM
@@ -53,14 +53,14 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |     3648 |       --- |             --- |
-|   LUT as Logic |    <0.001 |     1947 |     53200 |            3.66 |
+| Slice Logic    |    <0.001 |     3649 |       --- |             --- |
+|   LUT as Logic |    <0.001 |     1949 |     53200 |            3.66 |
 |   BUFG         |    <0.001 |        3 |        32 |            9.38 |
 |   F7/F8 Muxes  |    <0.001 |      269 |     53200 |            0.51 |
-|   Register     |    <0.001 |      596 |    106400 |            0.56 |
+|   Register     |    <0.001 |      597 |    106400 |            0.56 |
 |   CARRY4       |    <0.001 |       32 |     13300 |            0.24 |
 |   Others       |     0.000 |      304 |       --- |             --- |
-| Signals        |     0.002 |     4110 |       --- |             --- |
+| Signals        |     0.002 |     4111 |       --- |             --- |
 | Block RAM      |     0.003 |    115.5 |       140 |           82.50 |
 | I/O            |     0.004 |       37 |       125 |           29.60 |
 | Static Power   |     0.112 |          |           |                 |

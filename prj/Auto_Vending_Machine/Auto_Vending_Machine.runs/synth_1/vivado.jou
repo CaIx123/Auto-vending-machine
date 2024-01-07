@@ -3,8 +3,8 @@
 # SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Mon Dec 11 22:38:42 2023
-# Process ID: 17132
+# Start of session at: Sun Jan  7 14:27:48 2024
+# Process ID: 23760
 # Current directory: E:/Xilinx/FPGA_Prjs/dzy/Automatic vending machine/prj/Auto_Vending_Machine/Auto_Vending_Machine.runs/synth_1
 # Command line: vivado.exe -log top_lcd_touch_FSM.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_lcd_touch_FSM.tcl
 # Log file: E:/Xilinx/FPGA_Prjs/dzy/Automatic vending machine/prj/Auto_Vending_Machine/Auto_Vending_Machine.runs/synth_1/top_lcd_touch_FSM.vds
